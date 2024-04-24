@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Tiro+Tamil" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bebas+Neue" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/ytstyle.css">
+    <title>BTS</title>
+<style></style>
+</head>
+<body>
+    <a class = "skip" href="#skip">Skip to Main Content</a>
+    <header>
+        <nav>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <a href="mosque.html">Mosques</a>
+                <a href="coffee.html">Coffee shops</a>
+                <a href="bts.html" class="active">BTS</a>
+            </div>
+        </nav>
+    </header>
+<main id="skip">
+    <h1>BTS moments I think about all the time</h1>
+    <div class="video">
+        <div class = "options">
+		<button class="thumb" id = "play">Play Video</button>
+		<button class="thumb" id = "pause">Pause Video</button>
+        <button class="thumb" id="mute">Mute</button><br>
+        <label for="seekBar">Video Progress:</label>
+        <input type="range" id="seekBar" value="0" step="0.01">
+	    </div>
+        <figure>
+            <video id="myVideo" autoplay="false" preload="none" src="bts1.mp4"><source id="myVideo" src="bts1.mp4" type="video/mp4"></video>
+            <div class="thumbs">
+                <button class="thumb active" id="button_one" onclick="playVid('one')">BTS members being funny</button>
+                <button class="thumb" id="button_two" onclick="playVid('two')">BTS members having Fun</button>
+                <button class="thumb" id="button_three" onclick="playVid('three')">BTS playing Squid games</button>
+                <button class="thumb" id="button_four" onclick="playVid('four')">BTS performance</button>
+            </div>
+        </figure>
+    </div>
+    <label for="slider">Volume</label>: 0 <input type="range" id="slider" min="0" max="100" value="100" step="10"> 100%<br>
+    <div>Volume is: <span id = "volume"> </span><br><br></div>
+
+<script src="bts.js"></script>
+</main>
+<!----//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+-->
+
+ <footer>
+        <p>Nuzhat Jahan 2024</p>
+</footer>
+</body>
+</html>
